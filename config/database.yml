@@ -3,7 +3,7 @@ default: &default
 
 development:
   <<: *default
-  database: cultural_currency
+  database: cultural_currency_dev
 
 production:
   <<: *default
