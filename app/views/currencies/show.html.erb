@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @currency.title %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @currency.country %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @currency.description %>
+</p>
+
+<p>
+  <strong>Recipe link:</strong>
+  <%= @currency.recipe_link %>
+</p>
+
+<p>
+  <strong>Music link:</strong>
+  <%= @currency.music_link %>
+</p>
+
+<p>
+  <strong>Added date:</strong>
+  <%= @currency.added_date %>
+</p>
+
+<%= link_to 'Edit', edit_currency_path(@currency) %> |
+<%= link_to 'Back', currencies_path %>

@@ -1,0 +1,35 @@
+<h1>Listing currencies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Country</th>
+      <th>Description</th>
+      <th>Recipe link</th>
+      <th>Music link</th>
+      <th>Added date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @currencies.each do |currency| %>
+      <tr>
+        <td><%= currency.title %></td>
+        <td><%= currency.country %></td>
+        <td><%= currency.description %></td>
+        <td><%= currency.recipe_link %></td>
+        <td><%= currency.music_link %></td>
+        <td><%= currency.added_date %></td>
+        <td><%= link_to 'Show', currency %></td>
+        <td><%= link_to 'Edit', edit_currency_path(currency) %></td>
+        <td><%= link_to 'Destroy', currency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Currency', new_currency_path %>
