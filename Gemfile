@@ -47,3 +47,7 @@ gem 'rails_12factor', group: :production
 
 # Fabric JS canvas plugin
 gem "fabric-rails"
+
+gem 'carmen-rails', '~> 1.0.0'
+
+gem "select2-rails"

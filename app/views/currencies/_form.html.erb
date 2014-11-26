@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :country %><br>
-    <%= f.text_field :country %>
+    <%= f.country_select :country, {prompt: 'Please select a country'}, id: "select_country"%>
   </div>
   <div class="field">
     <%= f.label :description %><br>

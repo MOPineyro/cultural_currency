@@ -16,4 +16,5 @@
 //= require fabric
 //= require jquery
 //= require bootstrap-sprockets
+//= require select2
 //= require_tree .
