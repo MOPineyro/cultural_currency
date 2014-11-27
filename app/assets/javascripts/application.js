@@ -14,7 +14,6 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
-//= require angular
 //= require fabric
 //= require bootstrap-sprockets
 //= require select2
