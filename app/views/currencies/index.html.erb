@@ -1,36 +1,27 @@
 
-<h1>Listing currencies</h1>
+<h1>Create Yo' Cultural Currency</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Country</th>
-      <th>Description</th>
-      <th>Recipe link</th>
-      <th>Music link</th>
-      <th>Added date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @currencies.each do |currency| %>
-      <tr>
-        <td><%= currency.title %></td>
-        <td><%= currency.country %></td>
-        <td><%= currency.description %></td>
-        <td><%= currency.recipe_link %></td>
-        <td><%= currency.music_link %></td>
-        <td><%= currency.added_date %></td>
-        <td><%= link_to 'Show', currency %></td>
-        <td><%= link_to 'Edit', edit_currency_path(currency) %></td>
-        <td><%= link_to 'Destroy', currency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<div class="row">
+  <div class="col-md-12">
+    <div class="currency_create">
+      <canvas id="c"></canvas>
+    </div>
+  </div>
+</div>
 <br>
 
-<%= link_to 'Add Currency', new_currency_path, class: "btn btn-primary" %>
+<a href="javascript:void(0)" class="btn btn-warning" id="add_shape">Add A Square</a>
+
+<select id="#e7">Some shit</select>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
