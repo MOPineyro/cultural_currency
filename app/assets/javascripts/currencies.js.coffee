@@ -43,7 +43,7 @@ fabric.Image.fromURL cat_pic, (img) ->
 
 	canvas.add(img).setActiveObject(img)
 
-$('#add_shape').bind 'click', (event) ->
+$('#add_square').bind 'click', (event) ->
 	rect = new fabric.Rect
 	  left: 100,
 	  top: 100,
@@ -51,12 +51,30 @@ $('#add_shape').bind 'click', (event) ->
 	  width: 20,
 	  height: 20
 
-	shape = 'http://fabricjs.com/assets/15.svg'
 	canvas.add(rect)
 	rect.set('fill', 'red');
-	rect.set({ strokeWidth: 5, stroke: 'rgba(100,200,200,0.5)' });
+	rect.set({ strokeWidth: 5, stroke: 'rgba(100,200,200,0.5)' })
 	rect.set('angle', 15).set('flipY', true);
 
+$('#add_circle').bind 'click', (event) ->
+  circle = new fabric.Circle
+    radius: 20, fill: 'green', left: 100, top: 100
+
+  canvas.add(circle)
+  circle.set('fill', 'blue');
+  circle.set({ strokeWidth: 5, stroke: 'rgba(132,200,200,0.5)' })
+  circle.set('angle', 15).set('flipY', true);
+
+main_text = 'nothing'
+
+$('#text').change ->
+  main_text = $('#text').val() 
+  console.log main_text
+
+$('#add_text').bind 'click', (text) ->
+  text = main_text
+  new_text = new fabric.Text(text, { left: 100, top: 100 })
+  canvas.add(new_text)
 
 $("#e7").select2
     placeholder: "Search for a repository"
